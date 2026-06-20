@@ -1,0 +1,307 @@
+.navbar {
+    font-family: 'Sans-serif', Arial, sans-serif;
+    background-color: #FFFFFF;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: #F8F8F8;
+    position: relative; 
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF0000;
+  }
+
+  
+  
+  @media (max-width: 768px) {
+    .logo-text {
+      font-size: 18px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-text {
+      font-size: 14px; 
+    }
+
+    
+  }
+    .nav-links {
+    display: flex; 
+    gap: 20px;
+    align-items: center;
+    margin-left: auto; 
+  }
+  
+.nav-link {
+    text-decoration: none;
+    color: #17181C;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #FF0000;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0; 
+    height: 2px; 
+    background-color: #FF0000; 
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%; 
+}  
+
+.nav-link.active {
+  color: #FF0000; 
+  font-weight: bold; 
+}
+
+.dropdown-link.active {
+  color: #FF0000; 
+  font-weight: bold; 
+}
+  .menu-container {
+    position: relative;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #17181C;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    z-index: 1001; 
+  }  
+  .dropdown-link {
+    display: block;
+    padding: 8px 9px;
+    text-decoration: none;
+    color: #17181C;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dropdown-link:hover {
+    background-color: #FFFFFF;
+    color: #FF0000;
+  }
+  
+  .account-menu-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .account-menu-button {
+    background-color: #FFFFFF;
+    color: #17181C;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .account-menu-button:hover {
+    background-color: #FFFFFF;
+    color: #FF0000;
+  }
+  
+  .account-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #FF0000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 160px;
+    z-index: 1001; 
+  }
+    
+  .account-dropdown-link {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #17181C;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .account-dropdown-link:hover {
+    background-color: #FFFFFF;
+    color: #FF0000;
+  }
+  
+  .account-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; 
+    }
+  
+    .menu-container {
+      display: block;
+    }
+  
+    .menu-button {
+      display: block; 
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .menu-button {
+      display: none; 
+    }
+  }
+  
+
+
+
+
+  .user-info {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    max-width: 160px; /* نفس عرض .account-dropdown-menu */
+  }
+  
+  .user-name {
+    font-weight: bold;
+    margin: 0;
+    font-size: 14px;
+    white-space: nowrap; /* منع النص من الانتقال لسطر جديد */
+    overflow: hidden; /* إخفاء النص الذي يتجاوز المساحة */
+    text-overflow: ellipsis; /* إضافة ... للنص المتجاوز */
+  }
+  
+  .user-email {
+    color: #666;
+    margin: 0;
+    font-size: 12px;
+    white-space: nowrap; /* منع النص من الانتقال لسطر جديد */
+    overflow: hidden; /* إخفاء النص الذي يتجاوز المساحة */
+    text-overflow: ellipsis; /* إضافة ... للنص المتجاوز */
+  }
+  
+  .logout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #ff1a1a;
+  }
+
+
+
+  .account-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    color: #17181C; /* Icon color */
+    transition: color 0.3s;
+  }
+  
+  .account-menu-button:hover .account-icon {
+    color: #FF0000; /* Icon color on hover */
+  }
+  
+  .icon {
+    margin-right: 8px; /* Spacing between icon and text */
+    vertical-align: middle; /* Align icon with text */
+  }
+  
+  .account-dropdown-link {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #17181C;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .account-dropdown-link:hover {
+    background-color: #f8f8f8;
+    color: #FF0000;
+  }
+  
+  .user-info {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    max-width: 160px; /* Same width as .account-dropdown-menu */
+  }
+  
+  .user-name {
+    font-weight: bold;
+    margin: 0;
+    font-size: 14px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ... for overflow */
+  }
+  
+  .user-email {
+    color: #666;
+    margin: 0;
+    font-size: 12px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ... for overflow */
+  }
+  
+  .logout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #ff1a1a;
+  }

@@ -1,0 +1,69 @@
+.container_P {
+    font-family: 'Sans-serif', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem; /* مسافة بين النص والصورة */
+  }
+  
+  .text-content_P {
+    flex: 1;
+  }
+  
+  .text-content_P h1 {
+    font-size: 1.8rem;
+    color: #FF0000;
+    margin-bottom: 0.5rem; /* تقليل المسافة تحت العنوان */
+  }
+  
+  .text-content_P p {
+    font-size: 18px;
+    color: #17181C;
+    line-height: 1.4; /* تقليل ارتفاع السطور */
+    margin-bottom: 0.5rem; /* تقليل المسافة تحت الفقرة */
+  }
+  
+  .text-content_P ul.no-spacing {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    color: #17181C;
+    padding: 0; /* إزالة الحشو الزائد */
+    margin-top: 0; /* إزالة المسافة فوق القائمة */
+    margin-bottom: 0; /* إزالة المسافة تحت القائمة */
+  }
+  
+  .text-content_P ul.no-spacing li {
+    margin-bottom: 0; /* إزالة المسافة بين عناصر القائمة */
+    line-height: 1.4; /* تقليل ارتفاع السطور في القائمة */
+  }
+  
+  .image-content_P {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .image-content_P img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .container_P {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem; /* تقليل المسافة بين العناصر على الشاشات الصغيرة */
+    }
+  
+    .text-content_P {
+      padding-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .image-content_P {
+      text-align: center;
+    }
+  }

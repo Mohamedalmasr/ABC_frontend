@@ -1,0 +1,157 @@
+/* Footer.css */
+.footer {
+  font-family: 'Sans-serif', Arial, sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 3px solid #FF0000;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .site-name h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FF0000;
+  margin-bottom: 1rem;
+}
+
+.footer .sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.footer .section {
+  text-align: left;
+  flex: 1;
+}
+
+.footer .section h3 {
+  font-size: 18px;
+  margin-bottom: 0.7rem;
+  color: #FF0000;
+}
+
+.footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer .links a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer .links a:hover {
+  color: #FF0000;
+}
+
+.footer .info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer .info-item .icon {
+  color: #FF0000;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.footer .info-item span {
+  font-size: 16px;
+  color: #000000;
+}
+
+/* Social Links Styles */
+.footer .social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer .social-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-direction: row-reverse; /* This will reverse the order */
+  justify-content: flex-end; /* This will align to the right */
+}
+
+/* If you want to maintain the same spacing as before */
+.footer .social-item span {
+  min-width: 1px;
+  text-align: right;
+}
+
+.footer .social-item a {
+  background-color: #17181C;
+  border: none;
+  padding: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer .social-item a:hover {
+  transform: translateY(-0.25rem);
+  border-radius: 50%;
+  background-color: #FF0000;
+}
+
+.footer .social-item a svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: #ffffff;
+}
+
+.footer .copyright {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #000000;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .footer .sections {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer .section {
+    text-align: center;
+  }
+
+  .footer .links {
+    align-items: center;
+  }
+
+  .footer .info-item {
+    justify-content: center;
+  }
+
+  .footer .social-item {
+    justify-content: center;
+  }
+}

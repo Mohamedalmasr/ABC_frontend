@@ -1,0 +1,128 @@
+.content-box {
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-start; 
+  gap: 40px; 
+  padding: 40px; 
+  background-color: #ffffff; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content h2 {
+  font-family: 'Sans-serif', Arial, sans-serif;
+  font-size: 2rem; 
+  color: #FF0000;
+  margin-bottom: 1.5rem; 
+  font-weight: bold; 
+}
+
+.text-content h3 {
+  font-size: 1.75rem; 
+  color: #17181C; 
+  margin-bottom: 1.5rem; 
+  font-weight: 600; 
+}
+
+.text-content p {
+  font-size: 1rem; 
+  line-height: 1.6; 
+  color: #17181C; 
+  margin-bottom: 1.5rem; 
+}
+
+.image-content {
+  flex: 1; 
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 900px; 
+  height: auto;
+  border-radius: 15px; 
+  object-fit: cover; 
+  margin-top: 145px; 
+  filter: drop-shadow(0 0 20px #ff0000); 
+  transition: filter 0.3s ease;
+  filter: brightness(1.2);
+}
+
+.profile-image:hover {
+  filter: brightness(1.2) drop-shadow(0 0 20px #FF0000); 
+}
+
+.new-box {
+  font-family: 'Sans-serif', Arial, sans-serif;
+  background-color: #ffffff; 
+  padding: 40px; 
+  border-radius: 15px; 
+  max-width: 1200px; 
+  margin: 20px auto; 
+}
+
+.new-box h2 {
+  font-size: 2rem; 
+  color: #FF0000; 
+  margin-bottom: 1.5rem; 
+  font-weight: bold; 
+}
+
+.new-box p {
+  font-size: 1rem; 
+  line-height: 1.6; 
+  color: #17181C; 
+  margin-bottom: 1.5rem; 
+}
+
+@media (max-width: 768px) {
+  .content-box {
+    flex-direction: column; 
+    gap: 10px;
+    padding: 20px; 
+  }
+
+  .text-content,
+  .image-content {
+    flex: none; 
+    width: 100%; 
+  }
+
+  .image-content {
+    order: -1;
+  }
+
+  .text-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .text-content h3 {
+    font-size: 1.5rem; 
+  }
+
+  .text-content p {
+    font-size: 0.9rem;
+  }
+
+  .profile-image {
+    margin-top: 0; 
+    max-width: 100%; 
+  }
+
+  .new-box {
+    padding: 20px; 
+  }
+
+  .new-box h2 {
+    font-size: 1.75rem; 
+  }
+
+  .new-box p {
+    font-size: 0.9rem; 
+  }
+}
