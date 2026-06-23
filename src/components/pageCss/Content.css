@@ -99,6 +99,12 @@ label {
   background: linear-gradient(to bottom, #FF0000);
 }
 
+.send-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+  transform: none;
+}
+
 .send-button:active {
   transform: scale(0.95);
   box-shadow: 0px 2px 5px #FF0000;
@@ -146,6 +152,25 @@ label {
   height: 25px;
   margin-right: 5px;
   transform: rotate(45deg);
+}
+
+.submit-message {
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 14px 0 0;
+  padding: 10px 12px;
+}
+
+.submit-message.success {
+  background: #eef8f1;
+  border: 1px solid #3f9b58;
+  color: #236136;
+}
+
+.submit-message.error {
+  background: #fff0f0;
+  border: 1px solid #d23737;
+  color: #8c1d1d;
 }
 
 .contact-info {

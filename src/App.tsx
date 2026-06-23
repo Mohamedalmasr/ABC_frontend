@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/page/Home';
 import About from './components/page/About';
@@ -15,7 +14,6 @@ import PricingPage from './components/page/PricingPage';
 import AuthLayout from './AuthLayout'; 
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import path from 'path';
 
 const Layout = () => {
   return (
